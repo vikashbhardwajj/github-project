@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 2vh;
+}
+
+form {
+  margin-top: 2vh;
+  padding: 1vh;
+}
+form input {
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+form #submit {
+  cursor: pointer;
+}
+form #submit:hover {
+  background-color: rgba(82, 241, 90, 0.831372549);
+  color: white;
+  border: none;
+}
+form #submit:active {
+  background-color: rgba(46, 162, 52, 0.6549019608);
+  color: white;
+  transition: 0.1s ease;
+  border: none;
+}
+form #username:focus {
+  outline: none;
+  border: 1px solid white;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+  background-color: rgb(7, 7, 7);
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 1px;
+  border: 1px solid rgb(101, 94, 94);
+  position: absolute;
+  top: 1%;
+  right: 2%;
+}
+
+.user-card {
+  background: #fff;
+  width: 100%;
+  max-width: 510px;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5), -10px -10px 30px rgba(255, 255, 255, 0.1); /* light outer glow for soft 3D */
+  margin-top: 2vh;
+  padding: 2vh;
+  color: #000;
+  opacity: 0;
+}
+.user-card h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2vh;
+}
+.user-card p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 1vh;
+}
+.user-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  margin-top: 3vh;
+}
+.user-card .repos {
+  margin-top: 4vh;
+  font-size: 1.2rem;
+}
+.user-card .repos h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 2vh;
+}
+.user-card .repos a {
+  text-decoration: none;
+  color: rgba(3, 148, 11, 0.831372549);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+  h2 {
+    margin-top: 5vh;
+    font-size: 1.6rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  form input {
+    font-size: 1.1rem;
+    padding: 0.4rem 0.8rem;
+  }
+  form #submit {
+    font-size: 1.1rem;
+  }
+  button {
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+  }
+  .user-card {
+    padding: 1rem;
+    margin-bottom: 1vh;
+  }
+  .user-card h3 {
+    font-size: 1.5rem;
+  }
+  .user-card p {
+    font-size: 1.15rem;
+  }
+  .user-card img {
+    width: 150px;
+    height: 150px;
+  }
+  .user-card .repos {
+    font-size: 1rem;
+  }
+  .user-card .repos h4 {
+    font-size: 1.3rem;
+    white-space: nowrap;
+  }
+  .user-card .repos a {
+    font-size: 1.15rem;
+  }
+}/*# sourceMappingURL=style.css.map */
