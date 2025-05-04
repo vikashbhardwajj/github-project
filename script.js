@@ -13,7 +13,7 @@ function getUserData() {
       body.style.color = "black";
       btn.style.backgroundColor = "white";
       btn.style.color = "black";
-      btn.textContent = "light"
+      btn.textContent = "dark"
       isDarkMode = false;
       input.style.border = "1px solid black";
     } else {
@@ -21,7 +21,7 @@ function getUserData() {
       body.style.color = "white";
       btn.style.backgroundColor = "black";
       btn.style.color = "white";
-      btn.textContent = "dark"
+      btn.textContent = "light"
       input.style.border = "1px solid white";
       isDarkMode = true;
     }
