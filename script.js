@@ -83,25 +83,3 @@ function getUserData() {
 }
 getUserData();
 
-let form = document.querySelector("form");
-let submit = document.querySelector("#submit");
-let input = document.querySelector("input");
-
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  let username = input.value.trim();
-  console.log(username);
-  if (!username) return;
-
-  fetch(`https://api.github.com/users/${username}`)
-    .then(wholeData => wholeData.json())
-      .then(user => {
-        console.log(user)
-      fetch(
-        `https://api.github.com/users/${username}/repos?sort=updated&per_page=5`
-      ).then(reposData => reposData.json()).then((repos) => {
-          console.log(repos)
-          console.log(user.bio)
-    })
-    })
-});
